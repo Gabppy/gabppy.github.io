@@ -177,7 +177,7 @@ span.test2 {
     /*  this is all your font styling and positioning for MAIN    */
     font-family: 'Pixelify Sans', sans-serif;
     font-style: bold;
-    text-align: left;
+    text-align: center;
     font-size: 4em;
     font-weight: bold;
     padding-left: 3em;
@@ -226,5 +226,16 @@ span.test2 {
     font-size: 1.5em;
     color:#bd64d5;
   }
+  .imageBox {
+    overflow: auto;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 5%;
+  }
+
   
 }
