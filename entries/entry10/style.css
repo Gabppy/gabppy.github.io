@@ -1,69 +1,131 @@
+body {
+  background-color: rgb(28, 29, 20);
+}
+.flex-container {
+display: inline-block;
+flex-wrap: nowrap;
+flex-direction: column;
 
 
-/* body {
-    background-color:  black;
-  }
-  
-  section {
-    display:  flex;
-    flex-direction:  column;
-    justify-content: center;
-    align-items:  center;
-    height:  100vh;
-  }
-  
-  .button {
-    padding: 20px 50px;
-    border-radius: 30px;
-    background-color:  white;
-    color:  black;
-    font-size:  60px;
+
+}
+
+img {
+border-radius: 5%;
+display: inline-block;
+border-color: #d7ecf7;
+border-width: 5px;
+flex-direction: column;
+
+
+
+}
+
+span.test2 {
+writing-mode: vertical-rl; 
+
+}
+
+.animate-charcter
+{
+  font-family: 'EB Garamond';
+ text-align: left;
+background-image: linear-gradient(
+  100deg,
+  #d7ecf7 23%,
+  #d7ecf7 63%,
+  rgb(46, 120, 155)0%,
+  rgb(250, 243, 249) 100%
+ 
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 20s linear infinite;
+display: inline-block;
     font-size: 20px;
-    text-align:  center;
-    transition:  all 100ms;
-  }
-  
-  .button:hover {
-    background-color: #DEB887;
-    cursor:  pointer;
-  } */
+}
 
-  body {
-    background-color:  black;
-  }
-  
-  section {
-    display:  flex;
-    flex-direction:  column;
-    justify-content: center;
-    align-items:  center;
-    height:  100vh;
-  }
-  
-  .button {
-    padding: 20px 50px;
-    border-radius: 30px;
-    background-color:  white;
-    color:  black;
-    font-size:  60px;
-    font-size: 20px;
-    text-align:  center;
-    text-align:  center;
-    transition:  all 100ms;
-  }
-  
-  .button:hover {
-    background-color: #DEB887;
-    cursor:  pointer;
-  }
-  
-  .buttonOn {
-    background-color:  black;
-    color:  white;
-  }
-  
-  .light {
-    background-color: papayawhip;
-  }
+@keyframes textclip {
+to {
+  background-position: 200% center;
+}
+}
 
-  
+p {
+color: #d7ecf7;
+font-family: 'smooch sans';
+font-size: 17pt;
+align-items: center;
+}
+h1 {
+color: #d7ecf7;
+font-family: 'Smooch Sans';
+justify-content: flex-start;
+flex: 50%;
+font-size: 50pt;
+}
+
+
+.imageBox {
+position: relative;
+float: none;
+display: inline-block;
+align-items: flex-end;
+}
+
+.imageBox .hoverImg {
+position: absolute;
+left: 0;
+top: 0;
+display: none;
+align-items: flex-end;
+}
+
+.imageBox:hover .hoverImg {
+display: inline-block;
+align-items: flex-end;
+}
+
+.imageBoxRight {
+position: relative;
+float: none;
+display: inline-block;
+align-items: flex-end;
+}
+
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+@media all and (max-width: 800px) {
+p{
+  font-size:15pt;
+  font-family: 'smooch sans';
+}
+span.test2{
+  display: none;
+}
+.column {
+  float: left;
+  width: 46%;
+
+}
+
+.row {
+  content: "";
+  clear: both;
+  display: table;
+}
+}

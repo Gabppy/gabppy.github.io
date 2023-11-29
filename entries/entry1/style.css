@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(28, 29, 20);
+}
+.flex-container {
+  display: inline-block;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  
+  
+
+}
+
+img {
+  border-radius: 5%;
+  display: inline-block;
+  border-style: dotted;
+  border-color: #d7ecf7;
+  border-width: 5px;
+  flex-direction: column;
+ 
+  
+  
+}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+
+}
+
+.animate-charcter
+{
+    font-family: 'EB Garamond';
+   text-align: left;
+  background-image: linear-gradient(
+    100deg,
+    #d7ecf7 0%,
+    #d7ecf7 63%,
+    rgb(28, 29, 20)23%,
+    rgb(250, 243, 249) 100%
+   
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 20s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+p {
+  color: #d7ecf7;
+  font-family: 'EB Garamond';
+  font-size: medium;
+  align-items: center;
+}
+h1 {
+  color: #d7ecf7;
+  font-family: 'Smooch Sans';
+  justify-content: flex-start;
+  flex: 50%;
+  font-size: 50pt;
+}
+pre{
+  font-family: 'smooch sans';
+  font-size: 20pt;
+  text-align: left;
+}
+
+.imageBox {
+  position: relative;
+float: none;
+  display: inline-block;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.imageBox:hover .hoverImg {
+  display: inline-block;
+}
+
+.imageBoxRight {
+  position: relative;
+float: none;
+  display: inline-block;
+}

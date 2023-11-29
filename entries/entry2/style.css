@@ -1,42 +1,100 @@
-
+.flex-container {
+    display: inline-block;
+    flex-wrap: nowrap;
+    flex-direction: row;  
+  
+  }
 body {
-    background-color: #8790A6;
-    font-family: 'Xanh Mono', monospace;
+    background-color: rgb(28, 29, 20);
+    font-family: 'smooch sans';
     padding: 50px;
 }
 h1{
     text-align: left;
     color: #FFFFFF;
-    font-size: 200px;
-    font-family: yeseva system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: regular;
-    margin-bottom: 0px;
-}
-h2{
-    font-size: 105;
-    color: #FFFFFF;
-}
-h3{color: #C5EDDF;}
-h4{color: #C5DAED}
-h5{color: #FDEFDE}
-h6{color: #BFD8C2;}
+    font-size: 100px;
+    font-family: 'smooch sans';
 
-p4{color: #FFFFFF;
-    font-size: small;}
-p2{color: black;
-    font-size: small;}
-p3{font-size: medium;
-    color: #FFFFFF;}
-p{
-    color: #D0D7DE;
-    font-size: 20px;
-    line-height: 140%;
 }
- .text {
-    padding: 20px;
-} 
+
+pre{
+    color: #d7ecf7;
+    font-family: 'smooch sans';
+    font-size: 20pt;
+}
+
+
+.p{
+    color: #D0D7DE;
+    font-size: 20pt;
+    font-family: 'EB Garamond';
+}
+
+ 
 img {
-    max-width: 40%;
-    float: right;
-    padding-left: 50px;
-    padding-bottom: 30px;
+    border-radius: 5%;
+    display: inline-block;
+    border-style: dotted;
+    border-color: #d7ecf7;
+    border-width: 5px;
+    flex-direction: column;
+    justify-content: right;
+}
+span.test2 {
+    writing-mode: vertical-rl; 
+  
+  }
+.imageBox {
+    position: relative;
+  float: none;
+    display: inline-block;
+  }
+  
+  .imageBox .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  
+  .imageBox:hover .hoverImg {
+    display: inline-block;
+  }
+  
+  .imageBoxRight {
+    position: relative;
+  float: none;
+    display: inline-block;
+  }
+  
+
+.animate-charcter
+{
+    font-family: 'EB Garamond';
+   text-align: left;
+  background-image: linear-gradient(
+    100deg,
+    #d7ecf7 0%,
+    #d7ecf7 63%,
+    rgb(28, 29, 20)23%,
+    rgb(250, 243, 249) 100%
+   
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 15s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
