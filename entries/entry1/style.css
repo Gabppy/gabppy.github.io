@@ -1,12 +1,10 @@
 body {
-    background-color: rgb(28, 29, 20);
+    background-color: rgb(119, 153, 159);
 }
 .flex-container {
   display: inline-block;
   flex-wrap: nowrap;
   flex-direction: column;
-  
-  
 
 }
 

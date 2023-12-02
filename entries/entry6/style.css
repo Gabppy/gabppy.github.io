@@ -1,15 +1,24 @@
 body {
-    background-color: #6087a5 ;
+    background-color: #000000 ;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-family: 'Smooch Sans';
+  margin-bottom: -100px;
+  height: 900pt;
 }
 
 
-
-.underline {
-    color: white;
-    text-decoration: underline #2d7f9e double 5px;
-    text-align: right;
-    orientation:  15deg ;
-  }
 
   .animate-charcter
 {
@@ -19,8 +28,8 @@ body {
   background-image: linear-gradient(
     -225deg,
     #2d7f9e 0%,
-    white 29%,
-    #334b64 67%,
+    rgb(180, 83, 83) 29%,
+    #4f2d17 67%,
     white 100%
   );
   background-size: auto auto;

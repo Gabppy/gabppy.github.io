@@ -90,7 +90,7 @@ margin-top: 3cm;
 .song{
   padding-block: 10px;
   font-size: 100px;
-  font-family: 'Pixelify Sans', sans-serif;
+  font-family: 'Smooch sans';
    font-style: bold;
    color:#3e2105;
   padding-bottom: 40px;
@@ -99,8 +99,8 @@ margin-top: 3cm;
 
 .nav{
   font-size: larger;
-  font-family: 'Dancing Script', cursive;
-  color:#3e21055;
+  font-family: 'Smooch sans';
+  color:#3e2105;
 }
 
 
@@ -135,7 +135,7 @@ span.test2 {
     justify-content: left;
     padding-left: 2cm;
     align-items: left;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Smooch sans';
     font-style: bold;
     font-size: 3em;
     color:#3e2105;
@@ -147,7 +147,7 @@ span.test2 {
     height: 100px ;
     justify-content: center;
     align-items: center;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Smooch sans';
     font-style: italic;
         font-size: 2em;
   }
@@ -199,7 +199,7 @@ span.test2 {
   }
   
   .song {
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Smooch sans';
     display: flex;
     order: 3;
     width: 50%;
@@ -222,7 +222,7 @@ span.test2 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Smooch sans';
     font-style: bold;
     font-size: 1.5em;
     color: rgb(54, 24, 4);
