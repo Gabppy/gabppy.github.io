@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(28, 29, 20);
+  background-color: rgb(24, 20, 18);
 }
 .flex-container {
 display: inline-block;
@@ -13,7 +13,7 @@ flex-direction: column;
 img {
 border-radius: 5%;
 display: inline-block;
-border-color: #d7ecf7;
+color:rgb(252, 244, 247);
 border-width: 5px;
 flex-direction: column;
 
@@ -32,9 +32,9 @@ writing-mode: vertical-rl;
  text-align: left;
 background-image: linear-gradient(
   100deg,
-  #d7ecf7 23%,
+  rgb(252, 244, 247)23%,
   #d7ecf7 63%,
-  rgb(46, 120, 155)0%,
+  rgb(234, 210, 136)0%,
   rgb(250, 243, 249) 100%
  
 );
@@ -62,13 +62,15 @@ color: #d7ecf7;
 font-family: 'smooch sans';
 font-size: 17pt;
 align-items: center;
+margin-bottom: 2cm;
 }
 h1 {
+margin-top: -1cm;
 color: #d7ecf7;
-font-family: 'Smooch Sans';
+font-family: 'gasoek one';
 justify-content: flex-start;
 flex: 50%;
-font-size: 50pt;
+font-size: 100pt;
 }
 
 
@@ -109,13 +111,31 @@ align-items: flex-end;
   display: flex;
 }
 
-@media all and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+  body{
+    background-color: antiquewhite;
+  }
+  h1{
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    font-size: 50pt;
+  }
 p{
   font-size:15pt;
   font-family: 'smooch sans';
 }
 span.test2{
   display: none;
+}
+.animate-charcter{
+  background-image: linear-gradient(
+  100deg,
+  rgb(132, 119, 112)23%,
+  #1c1a19 63%,
+  rgb(93, 150, 164)0%,
+  rgb(14, 14, 20) 100%
+ 
+);
 }
 .column {
   float: left;

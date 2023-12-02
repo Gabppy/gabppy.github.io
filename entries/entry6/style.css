@@ -1,55 +1,58 @@
 body {
-    background-color: #6087a5 ;
+  background-image: url(imgs/small.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+
+h1{
+margin-top: 5cm;
+  text-align: center;
+  color: rgb(228, 211, 195);
+  font-size: 80px;
+  margin-bottom: 200px;
+  height: 400pt;
+  font-family: 'gasoek one';
+font-variant: small-caps;
+}
+
+h1:hover {
+  color: rgb(251, 122, 47);
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  background-color: transparent;
+  text-decoration: none;
+}
+.newspaper {
+  margin-top: 3cm;
+  column-count: 3;
+  column-gap: 40px;
+  color: rgb(223, 208, 189);
+  column-rule: 1px solid rgb(228, 211, 195);
+  text-align: center;
+  font-family: 'young serif';
+  font-size: large;
+  margin-bottom: 20cm;
 }
 
 
 
-.underline {
-    color: white;
-    text-decoration: underline #2d7f9e double 5px;
-    text-align: right;
-    orientation:  15deg ;
-  }
-
-  .animate-charcter
-{
-    font-family: 'Dancing Script', cursive;
-   text-decoration: underline #2d7f9e double 5px;
-   text-align: left;
-  background-image: linear-gradient(
-    -225deg,
-    #2d7f9e 0%,
-    white 29%,
-    #334b64 67%,
-    white 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 80px;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-span.test2 {
-    writing-mode: vertical-rl; 
-  }
 
 .column {
     float:right;
     width: 50%;
-
-
     
   }
 
@@ -85,3 +88,26 @@ img {
     75%  {left:0px; top:600px;}
     100% {left:0px; top:0px;}
   }
+
+
+  
+@media only screen and (max-width: 600px) {
+  h1{
+    padding-top: 3cm;
+    font-size: 40pt;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    font-variant: normal;
+  }
+  h1:hover {
+    opacity: 50%;
+    color: rgb(188, 192, 254);
+    padding-top: 3cm;
+    
+  }
+
+  .newspaper{
+    color: rgb(246, 230, 210);
+    font-size: 10pt;
+  }
+}

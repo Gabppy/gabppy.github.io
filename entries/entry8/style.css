@@ -1,7 +1,19 @@
 body{
-  background-color: black;
+  background-color: rgb(134, 134, 134);
 }
+button {
+  font-family: young serif;
+  border-radius: 0%;
+  color: #bd64d5;
+  border-color:#e4c0ee;
+  border-radius: 15%;
+  font-size: 15pt;
+  margin-bottom: 4cm;
 
+}
+img{
+  display:none;
+}
 .wrapper {
   flex-direction: row;
   align-content: flex-start;
@@ -17,17 +29,17 @@ body{
   padding-top: 8cm;
 }
 pre{
-  color: #90bbc5;
+  color: #bbedf8;
 }
 
-.imageBox {
+/* .imageBox {
   overflow: auto;
   white-space: nowrap;
   position: relative;
   display: inline-block;
   text-align: center;
-  padding: 14px;
-  text-decoration: none;
+  /* padding: 14px; */
+  /* text-decoration: none;
 }
 
 .imageBox .hoverImg {
@@ -39,15 +51,15 @@ pre{
 
 .imageBox:hover .hoverImg {
   display: inline-block;
-}
+} */ 
 
 .animate-charcter
 {
   background-image: linear-gradient(
     -225deg,
-    #e3c30b 0%,
+    #fff2a7 0%,
     #90bbc5 29%,
-    #bd64d5 67%,
+    #e8b8f5 67%,
     #90bbc5 100%
   );
   background-size: auto;
@@ -60,13 +72,15 @@ pre{
   -webkit-text-fill-color: transparent;
   animation: textclip 1s reverse infinite;
   display: inline-block;
+  font-family: 'gasoek one';
       font-size: 120px;
-      padding-top: 3cm;
+   margin-top: -3cm;
+   margin-bottom: -3cm;
 }
 
 @keyframes textclip {
   to {
-    color:#bd64d5;
+    color:#ecc2f7;
     background-position: 200% center;
   }
 }
@@ -80,7 +94,7 @@ pre{
   border-radius: 100px;
   border-style: dotted;
   font-family: 'Pixelify Sans', sans-serif;
-  color:#bd64d5;
+  color:#eccaf5;
   font-size: small;
 
   
@@ -93,15 +107,16 @@ pre{
   font-size: 100px;
   font-family: 'Pixelify Sans', sans-serif;
    font-style: bold;
-   color:#bd64d5;
+   color:#ecc6f6;
   padding-bottom: 40px;
   
 }
 
 .nav{
+  margin-top: -1cm;
   font-size: larger;
-  font-family: 'Dancing Script', cursive;
-  color:#bd64d5;
+  font-family: 'young serif';
+  color:#e2bcec;
 }
 
 
@@ -112,7 +127,7 @@ pre{
   height: 10px;
   position: relative;
   animation: myfirst 8s linear 4s infinite alternate;
-  color:#bd64d5;
+  color:#e6c3f0;
   font-family: 'Pixelify Sans', sans-serif;}
 
 span.test2 {
@@ -121,121 +136,68 @@ span.test2 {
 
 @keyframes myfirst {
   0%   {left:0px; top:0px;}
-  25%  {left:600px; top:0px;}
-  50%  {eft:600px; top:600px;}
-  75%  {left:0px; top:600px;}
+  25%  {left:300px; top:0px;}
+  50%  {left:300px; top:300px;}
+  75%  {left:0px; top:300px;}
   100% {left:0px; top:0px;}
 }
-/* for mobile */
-@media all and (max-width: 800px) {
-  .nav{
-    display: flex;
-    order: 2;
-    height: 10%;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Dancing Script', cursive;
-    font-style: bold;
-    font-size: 1em;
-    color:#bd64d5;
+
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-color: gray;
   }
+h3{
+  color: whitesmoke;
+  text-align: center;
+  margin-top: ;
+}
+.nav{
+  margin-top: 0cm;
+  text-align: center;
+  color: #f8d8e5;
+  margin-bottom: -4cm;
+}
+.animate-charcter{
+  font-size: 60pt;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #90bbc5 29%,
+    #ffb8d6 67%,
+    #cae9f0 100%
+  );
   
-  .song {
-    display: flex;
-    order: 1;
-    height: 100px ;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Pixelify Sans', sans-serif;
-        font-size: 2em;
-        color:#bd64d5;
-  }
-  
-  .main {
-    display: flex;
-    order: 3;
-    font-family: sans-serif;
-    text-align: left;
-    font-family: 'Pixelify Sans', sans-serif;
-       font-size: 1.2em;
-    font-weight: bold;
-    padding: 1em;
-    color:#bd64d5;
-  }
+}
+p{
+  margin-top: -6cm;
+  font-size: small;
+  color: #f8d8e5;
+}
+pre{
+  margin-top: 7cm;
+  color: #fde4ee;
+
+}
+button{
+  color: #db88f1;
+  font-family: young serif;
+  border-color: #cae9f0;
+  font-size: 12pt;
+  margin-bottom: 2cm;
 }
 
-
-
-
-
-@media all and (min-width: 801px) {
-  .main {
-    /* this says MAIN TAKES UP 3 COLUMNS > change this number to change width   */
-    flex: 3;
-    /* this says MAIN IS 1st IN ORDER */
-    order: 1;
-    /*  this is all your font styling and positioning for MAIN    */
-    font-family: 'Pixelify Sans', sans-serif;
-    font-style: bold;
-    text-align: center;
-    font-size: 4em;
-    font-weight: bold;
-    padding-left: 3em;
-    padding-top: 3em;
-    padding-right: 1em;
-  }
-
-  .aside {
-    /* this says ASIDE TAKES UP 1 COLUMN > change this number to change width   */
-    flex: 1;
-    /* this says ASIDE IS 2ND ORDER */
-    order: 2;
-    /* this is all of the font styling and padding for ASIDE   */
-    font-family: 'Pixelify Sans', sans-serif;
-    font-style: bold;
-    padding: 1em;
-    font-size: 2em;
-  }
-  
-  .song {
-    font-family: 'Pixelify Sans', sans-serif;
-    display: flex;
-    order: 3;
-    width: 50%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-size: 2em;
-    color: white;
-  }
-
-
-
-  .nav{
-    display: flex; 
-    order: 4;
-    position: fixed;
-    bottom: 0px;
-    height: 5%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Dancing Script', cursive;
-    font-style: bold;
-    font-size: 1.5em;
-    color:#bd64d5;
-  }
-  .imageBox {
-    overflow: auto;
-    white-space: nowrap;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    padding: 30px;
-    text-decoration: none;
-    border-radius: 5%;
-  }
-
-  
+img{
+  display: none;
+}
+@keyframes myfirst {
+  0%   {left:0px; top:0px;}
+  25%  {left:0px; top:0px;}
+  50%  {eft:200px; top:0px;}
+  75%  {left:0px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+.div{
+  display: none;
+}
 }

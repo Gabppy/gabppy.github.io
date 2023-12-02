@@ -1,120 +1,95 @@
-.api {
-    background-color:rgb(28, 29, 20);
-    padding: 20px;
-    font-family: 'EB Garamond';
-    line-height: 1.5;
-    font-size: large;
-  }
+body{
+    opacity: 70%;
+    background-image: url(imgs/background.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+a: link{
+  text-decoration: none;
+}
   h1{
-    background-color: #4b809c;
+    font-variant: small-caps;
+    opacity: 90%;
+    background-color: #181007;
     text-align: center;
-    color: #d7ecf7;
+    color: rgb(252, 244, 247);
     font-size: 100px;
-    font-family: 'smooch sans';
+    font-family: 'gasoek one';
     font-style: regular;
     margin-bottom: -100px;
 }
 h2{
-    background-color: #4b809c;
+    background-color: black;
+   border-radius: 1px;
     font-family: 'smooch sans';
-    color: #d7ecf7;
+    color: rgb(252, 244, 247);
     font-size: 20pt;
 }
 
 p{
+    background-color: black;
+   font-size: 20pt;
     text-align: center;
-    color: #d7ecf7;
+    color: rgb(252, 244, 247);
     font-size: 25pt;
     font-family: 'smooch sans';
 }
-p1{
-    background-color: #4b809c;
-    text-align: center;
-    color: #d7ecf7;
-    font-size: medium;
-    font-family: 'EB Garamond';
-}
-p2{
-    padding: 20px;
-    font-family: 'EB Garamond';
-    color: #d7ecf7;
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
-}
-p3{
-    background-color: rgb(28, 29, 20);
-    padding: 20px;
-    font-family: 'EB Garamond';
-    color: #d7ecf7;
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
-}
-.gradient-1{
-    background-color: rgb(28, 29, 20);
-    padding: 20px;
-    color: #d7ecf7;
-    font-family: 'EB Garamond';
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
 
+* {
+    box-sizing: border-box;
+  }
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
 }
 
-.gradient-2{
-    background-color: #4b809c;
-    padding: 20px;
-    color: #d7ecf7;
-    font-family: 'EB Garamond';
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
-
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
 }
 
-.gradient-3{
-    background-color: rgb(28, 29, 20);
-    padding: 20px;
-    color: #d7ecf7;
-    font-family: 'EB Garamond';
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
-
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
 }
-.gradient-4{
-    background-color: #4b809c;
-    padding: 20px;
-    color: #d7ecf7;
-    font-family: 'EB Garamond';
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
 
+@media only screen and (max-width: 600px) {
+body{
+opacity: 90%;
+background-size: 600px;
+}
+h1{
+  opacity: 90%;
+  background-color: black;
+  padding-top: 3cm;
+  padding-bottom: 3cm;
+}
+p{
+  padding: 10px;
+}
 }
 
 
+  @media only screen and (max-width: 1200px) {
+    body{
+      opacity: 80%;
+      background-attachment: fixed;
+    }
+    h1{
+      opacity: 95%;
+      background-color: beige;
+      color: black;
+    }
 
-.gradient-5{
-    background-color: rgb(28, 29, 20);
-    padding: 20px;
-    font-family: 'EB Garamond';
-    color: #d7ecf7;
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
+    p{      background-color: beige;
+      color: black;
+      padding: 5px;
+      font-family: young serif;
+    }
 
-}
-
-.gradient-6{
-    background-color: #4b809c;
-    padding: 20px;
-    font-family: 'EB Garamond';
-    color: #d7ecf7;
-    line-height: 1.5;
-    font-size: large;
-    text-align: center;
-
-}
+  }
