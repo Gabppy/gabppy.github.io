@@ -6,7 +6,7 @@ body {
 }
 h1 {
   opacity: 80%;
-  font-size: 180pt;
+  font-size: 100pt;
     margin-right: -700pt;
     color: rgb(252, 244, 247);
     font-family: gasoek one;
@@ -162,7 +162,7 @@ body{
   background-size: 600px;
 }
 .animate-charcter{
-  margin-left: -16cm;
+
   display: none;
 }
 h1{
@@ -183,7 +183,7 @@ p{
 }
 }
   
-@media only screen and (min-width: 601px) {
+@media only screen and (max-width:1200px; min-width: 601px) {
   body{
     background-size: contain;
   }
