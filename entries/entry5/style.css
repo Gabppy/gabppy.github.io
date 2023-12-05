@@ -1,7 +1,32 @@
 body{
-  background-color: rgb(29, 26, 20);
+  background-color: rgb(24, 20, 18);
 }
 
+h2 {
+
+  background-image: linear-gradient(
+    -225deg,
+    rgb(0, 0, 0) 0%,
+    #7908f1 29%,
+    #ff8605 67%,
+    rgb(0, 0, 0) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1s linear infinite;
+  display: inline-block;
+
+  font-size: 25pt;
+}
+p {
+  
+  font-size: 12pt;
+}
 .wrapper {
   flex-direction: row;
   align-content: flex-start;
@@ -14,16 +39,19 @@ body{
 }
 
 
-
+audio {
+margin-left: 80%;
+}
 .animate-charcter
-{
+{margin-left: 50%;
+margin-top: -2cm;
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    rgb(29, 26, 20) 0%,
+    rgb(252, 244, 247) 0%,
     #7908f1 29%,
-    rgb(29, 26, 20) 67%,
-    #fff800 100%
+    #ff8605 67%,
+    rgb(252, 244, 247) 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -32,9 +60,10 @@ body{
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 5s linear infinite;
   display: inline-block;
-      font-size: 220px;
+  font-family: 'gasoek one';
+      font-size: 200px;
 }
 
 @keyframes textclip {
@@ -64,113 +93,40 @@ body{
   
 }
 
-.nav{
-  font-family: 'Smooch sans';
-  color: #fff800;
-}
 
-/* for mobile */
-@media all and (max-width: 800px) {
-  .nav{
-    display: flex;
-    order: 2;
-    height: 10%;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Dancing Script', cursive;
-    font-style: bold;
-    font-size: 1em;
-    color: white;
-  }
-  
-  .song {
-    display: flex;
-    order: 1;
-    height: 100px ;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Pixelify Sans', sans-serif;
-        font-size: 2em;
-    color: white;
-  }
-  
-  .main {
-    display: flex;
-    order: 3;
-    font-family: sans-serif;
-    text-align: left;
-    font-family: 'Pixelify Sans', sans-serif;
-       font-size: 1.2em;
-    font-weight: bold;
-    padding: 1em;
-    color: white;
-  }
+
+@media only screen and (max-width: 600px) {
+  .animate-charcter{
+    font-size: 90pt;
+    margin-left: 1%;
+    margin-top: 0.5cm;
+    margin-bottom: 8.5cm;
+    background-image: linear-gradient(
+      -225deg,
+      rgb(252, 244, 247) 0%,
+      #08d2f1 29%,
+      #ff8605 67%,
+      rgb(252, 244, 247) 100%
+    );
+    }
+    h2{
+      background-image: linear-gradient(
+        -225deg,
+        rgb(252, 244, 247) 0%,
+        #08d2f1 29%,
+        #ff8605 67%,
+        rgb(252, 244, 247) 100%
+      );
+
+    }
+
+    audio {
+      margin-left: 40%;
+    }
+    .main{
+      font-size:8pt
+    }
+
 }
 
 
-
-
-
-@media all and (min-width: 801px) {
-  .main {
-    /* this says MAIN TAKES UP 3 COLUMNS > change this number to change width   */
-    flex: 3;
-    /* this says MAIN IS 1st IN ORDER */
-    order: 1;
-    /*  this is all your font styling and positioning for MAIN    */
-    font-family: 'Pixelify Sans', sans-serif;
-    font-style: bold;
-    text-align: left;
-    font-size: 4em;
-    font-weight: bold;
-    padding-left: 3em;
-    padding-top: 3em;
-    padding-right: 1em;
-  }
-
-  .aside {
-    /* this says ASIDE TAKES UP 1 COLUMN > change this number to change width   */
-    flex: 1;
-    /* this says ASIDE IS 2ND ORDER */
-    order: 2;
-    /* this is all of the font styling and padding for ASIDE   */
-    font-family: 'Pixelify Sans', sans-serif;
-    font-style: bold;
-    padding: 1em;
-    font-size: 2em;
-  }
-  
-  .song {
-    font-family: 'Pixelify Sans', sans-serif;
-    display: flex;
-    order: 3;
-    width: 50%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-size: 2em;
-    color: white;
-  }
-
-  .fixed {
-    position: fixed;
-    bottom: 15%;
-  }
-
-  .nav{
-    display: flex; 
-    order: 4;
-    position: fixed;
-    bottom: 0px;
-    height: 5%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Dancing Script', cursive;
-    font-style: bold;
-    font-size: 1.5em;
-    color: white;
-  }
-  
-}

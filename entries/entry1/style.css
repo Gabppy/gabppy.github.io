@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(119, 153, 159);
+    background-color: rgb(24, 18, 16);
 }
 .flex-container {
   display: inline-block;
@@ -8,16 +8,24 @@ body {
 
 }
 
+.column {
+  float: left;
+  width: 33.33%;
+
+}
+
+
+.row:: {
+  content: "";
+  clear: both;
+  display: table;
+}
 img {
   border-radius: 5%;
   display: inline-block;
-  border-style: dotted;
-  border-color: #d7ecf7;
-  border-width: 5px;
+
   flex-direction: column;
  
-  
-  
 }
 
 span.test2 {
@@ -27,13 +35,13 @@ span.test2 {
 
 .animate-charcter
 {
-    font-family: 'EB Garamond';
+
    text-align: left;
   background-image: linear-gradient(
     100deg,
-    #d7ecf7 0%,
+    rgb(252, 244, 247) 0%,
     #d7ecf7 63%,
-    rgb(28, 29, 20)23%,
+    rgb(252, 244, 247)23%,
     rgb(250, 243, 249) 100%
    
   );
@@ -45,9 +53,9 @@ span.test2 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 20s linear infinite;
+  animation: textclip 5s linear infinite;
   display: inline-block;
-      font-size: 20px;
+      font-size: 120px;
 }
 
 @keyframes textclip {
@@ -57,17 +65,18 @@ span.test2 {
 }
 
 p {
-  color: #d7ecf7;
-  font-family: 'EB Garamond';
+  color: rgb(252, 244, 247);
+  font-family: 'young serif';
   font-size: medium;
   align-items: center;
 }
 h1 {
-  color: #d7ecf7;
-  font-family: 'Smooch Sans';
+  margin-left: 25pt;
+  color: rgb(252, 244, 247);
+  font-family: gasoek one;
   justify-content: flex-start;
   flex: 50%;
-  font-size: 50pt;
+  font-size: 120pt;
 }
 pre{
   font-family: 'smooch sans';
@@ -96,4 +105,46 @@ float: none;
   position: relative;
 float: none;
   display: inline-block;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  h1{
+    margin-right: 50%;
+    width: 200px;
+    font-size: 40pt;
+  }
+  pre{
+    line-height: 40px;
+    font-size: 13pt;
+    font-family: smooch sans;
+  }
+  p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  pre{
+    line-height: 40px;
+    font-size: 13pt;
+    font-family: young serif;
+  }
+  h1{
+  font-size: 60pt;}
+  p {
+    display: none;
+  }
+  .animate-charcter{
+  background-image: linear-gradient(
+    100deg,
+    rgb(65, 181, 219) 0%,
+    #878dfa 63%,
+    rgb(244, 226, 214)23%,
+    rgb(250, 243, 249) 100%
+   
+  )
+}
 }

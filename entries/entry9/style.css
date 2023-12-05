@@ -1,20 +1,57 @@
+
+
 body{
-  background-color: rgb(234, 227, 215);
+  background-color: #13100b;
 }
 
-.wrapper {
+/* .wrapper {
   flex-direction: row;
-  align-content: flex-start;
+  align-content: flex-end;
   display: flex;
   flex-flow: wrap;
 }
 
 .wrapper > * {
   flex: 1 100%;
+} */
+p{
+  margin-top: 3cm;
+  font-family: young serif;
+  color:#f5b6e3;
+  font-size: 20pt;
 }
-
 .top {
   padding-top: 8cm;
+}
+
+#heart{
+  display: row;
+  width:100pt
+  padding: 10px;
+}
+
+.flex-container {
+  flex-direction: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+}
+
+img { 
+    display: inline-block; 
+    width:auto;   
+    margin-top: 50pt;
+    max-width: 100%;
+    max-height: 100%;
+
 }
 pre{
   margin-top: -2cm;
@@ -22,6 +59,7 @@ pre{
   font-size: small;
   text-align: left;
 }
+
 
 .imageBox {
   overflow: auto;
@@ -48,23 +86,26 @@ pre{
 {
   background-image: linear-gradient(
     -225deg,
-    #090909 0%,
-    #3e2105 67%,
-    #fefefe 100%
+    hotpink 0%,
+    #bfa3bf 67%,
+    #3e2105 100%
   );
   background-size: auto;
   background-clip: border-box;
-  background-size: 200% auto;
+  background-size: 300% auto;
   color: #fff;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 1s reverse infinite;
+  animation: textclip 2s reverse infinite;
   display: inline-block;
-      font-size: 120px;
+  font-family: 'gasoek one';
+  stroke-width: 0.5pt;
+      font-size: 100px;
       padding-top: 3cm;
 }
+
 
 @keyframes textclip {
   to {
@@ -90,7 +131,7 @@ margin-top: 3cm;
 .song{
   padding-block: 10px;
   font-size: 100px;
-  font-family: 'Smooch sans';
+  font-family: 'young serif';
    font-style: bold;
    color:#3e2105;
   padding-bottom: 40px;
@@ -98,9 +139,10 @@ margin-top: 3cm;
 }
 
 .nav{
+  background-color: rgb(207, 150, 193);
   font-size: larger;
-  font-family: 'Smooch sans';
-  color:#3e2105;
+  font-family: 'young serif';
+  color: rgb(252, 244, 247);
 }
 
 
@@ -112,7 +154,7 @@ margin-top: 3cm;
   height: 10px;
   position: relative;
   animation: myfirst 8s linear 4s infinite alternate;
-  color:#0c434b;
+  color:hotpink;
   font-family: 'Pixelify Sans', sans-serif;}
 
 span.test2 {
@@ -127,8 +169,30 @@ span.test2 {
   100% {left:0px; top:0px;}
 }
 /* for mobile */
-@media all and (max-width: 800px) {
-  .nav{
+@media only screen and (max-width: 800px) {
+
+  body{
+    background-color: #0b0b0a;
+  }
+  .animate-charcter{
+    font-size: 50pt;
+    font-variant: small-caps;
+    background-image: linear-gradient(
+      -225deg,
+      hotpink 0%,
+      #f6d1f6 67%,
+      #3e2105 100%
+    );
+  }
+
+@keyframes myfirst {
+  0%   {left:0px; top:0px;}
+  25%  {left: 0px; top:0px;}
+  50%  {left:200px; top:00px;}
+  75%  {left:0px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+  /* .nav{
     display: flex;
     order: 2;
     height: 100%;
@@ -138,8 +202,8 @@ span.test2 {
     font-family: 'Smooch sans';
     font-style: bold;
     font-size: 3em;
-    color:#3e2105;
-  }
+    color: rgb(252, 244, 247);
+  } */
   
   .song {
     display: flex;
@@ -147,7 +211,7 @@ span.test2 {
     height: 100px ;
     justify-content: center;
     align-items: center;
-    font-family: 'Smooch sans';
+    font-family: 'young serif';
     font-style: italic;
         font-size: 2em;
   }
@@ -155,14 +219,17 @@ span.test2 {
   .main {
     display: flex;
     order: 3;
-    font-family: sans-serif;
+     color:#f5b6e3;
     text-align: left;
-    font-family: 'Pixelify Sans', sans-serif;
-       font-size: 1.2em;
+    font-size: 15pt;
     font-weight: bold;
     padding: 1em;
-    color:#3e3933;
+    color:#f5b6e3;
   }
+.nav {
+  margin-top: 9cm;
+  margin-bottom:-5cm;
+}
 }
 
 
@@ -170,20 +237,22 @@ span.test2 {
 
 
 @media all and (min-width: 801px) {
+  p{
+    margin-top: 6cm;
+  }
   .main {
     /* this says MAIN TAKES UP 3 COLUMNS > change this number to change width   */
     flex: 3;
     /* this says MAIN IS 1st IN ORDER */
     order: 1;
     /*  this is all your font styling and positioning for MAIN    */
-    font-family: 'Pixelify Sans', sans-serif;
+  margin-top: 2cm;
+  margin-bottom: 2cm;
     font-style: bold;
     text-align: left;
     font-size: 2em;
     font-weight: bold;
-    padding-top: 3em;
-    padding-right: 1em;
-    padding-bottom: 5cm
+
   }
 
   .aside {
@@ -192,14 +261,15 @@ span.test2 {
     /* this says ASIDE IS 2ND ORDER */
     order: 2;
     /* this is all of the font styling and padding for ASIDE   */
-    font-family: 'Pixelify Sans', sans-serif;
+
     font-style: bold;
     padding: 1em;
     font-size: 2em;
   }
   
   .song {
-    font-family: 'Smooch sans';
+    margin-top: 3cm;
+    font-family: 'young serif';
     display: flex;
     order: 3;
     width: 50%;
@@ -222,10 +292,10 @@ span.test2 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-family: 'Smooch sans';
+    font-family: 'young serif';
     font-style: bold;
     font-size: 1.5em;
-    color: rgb(54, 24, 4);
+    color: rgb(252, 244, 247);
   }
   .imageBox {
     overflow: auto;

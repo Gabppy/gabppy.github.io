@@ -5,27 +5,28 @@
   
   }
 body {
-    background-color: rgb(29, 26, 20);
+  background-color: rgb(23, 19, 17);
     font-family: 'smooch sans';
     padding: 50px;
 }
 h1{
     text-align: left;
-    color: #FFFFFF;
+    color:rgb(252, 244, 247);
     font-size: 100px;
-    font-family: 'smooch sans';
+    font-family: 'gasoek one';
 
 }
 
 pre{
-    color: #d7ecf7;
+    color: rgb(252, 244, 247);
     font-family: 'smooch sans';
     font-size: 20pt;
+    margin-left: -25pt;
 }
 
 
 .p{
-    color: #D0D7DE;
+    color: rgb(252, 244, 247);
     font-size: 20pt;
     font-family: 'EB Garamond';
 }
@@ -34,8 +35,6 @@ pre{
 img {
     border-radius: 5%;
     display: inline-block;
-    border-style: dotted;
-    border-color: #d7ecf7;
     border-width: 5px;
     flex-direction: column;
     justify-content: right;
@@ -70,13 +69,13 @@ span.test2 {
 
 .animate-charcter
 {
-    font-family: 'EB Garamond';
+    font-family: 'gasoek one';
    text-align: left;
-  background-image: linear-gradient(
+   background-image: linear-gradient(
     100deg,
-    #d7ecf7 0%,
+    rgb(252, 244, 247) 0%,
     #d7ecf7 63%,
-    rgb(28, 29, 20)23%,
+    rgb(252, 244, 247)23%,
     rgb(250, 243, 249) 100%
    
   );
@@ -88,7 +87,7 @@ span.test2 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 15s linear infinite;
+  animation: textclip 5s linear infinite;
   display: inline-block;
       font-size: 20px;
 }
@@ -96,5 +95,53 @@ span.test2 {
 @keyframes textclip {
   to {
     background-position: 200% center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .animate-charcter{
+    background-image: linear-gradient(
+      100deg,
+      rgb(255, 243, 173) 0%,
+      #f5f5f5 63%,
+      rgb(234, 185, 36)23%,
+      rgb(250, 243, 249) 100%
+     
+    );
+
+  }
+  h1{
+   margin-top: -1cm;
+   margin-left: 5px;
+    width: 200px;
+    font-size: 50pt;
+  }
+  pre{
+    margin-left: 5px;
+    line-height: 40px;
+    font-size: 13pt;
+    font-family: smooch sans;
+  }
+  img{
+    margin-left: 2cm;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .animate-charcter{
+    background-image: linear-gradient(
+      100deg,
+      rgb(173, 245, 255) 0%,
+      #f5f5f5 63%,
+      rgb(36, 198, 234)23%,
+      rgb(250, 243, 249) 100%
+     
+    );
+
+  }
+  h1{
+    font-size: 60pt;
   }
 }
