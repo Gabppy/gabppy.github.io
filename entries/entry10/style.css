@@ -1,5 +1,7 @@
 body {
-  background-color: rgb(24, 20, 18);
+  background-image: url(imgs/note-book.webp);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .flex-container {
 display: inline-block;
@@ -13,7 +15,7 @@ flex-direction: column;
 img {
 border-radius: 5%;
 display: inline-block;
-color:rgb(252, 244, 247);
+color:rgb(154, 110, 126);
 border-width: 5px;
 flex-direction: column;
 
@@ -32,16 +34,16 @@ writing-mode: vertical-rl;
  text-align: left;
 background-image: linear-gradient(
   100deg,
-  rgb(252, 244, 247)23%,
-  #d7ecf7 63%,
-  rgb(234, 210, 136)0%,
-  rgb(250, 243, 249) 100%
+  rgb(163, 100, 123)23%,
+  #58849b 63%,
+  rgb(154, 128, 51)0%,
+  rgb(163, 91, 152) 100%
  
 );
 background-size: auto auto;
 background-clip: border-box;
 background-size: 200% auto;
-color: #fff;
+color: #a76868;
 background-clip: text;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
@@ -58,7 +60,7 @@ to {
 }
 
 p {
-color: #d7ecf7;
+color: #53798d;
 font-family: 'smooch sans';
 font-size: 17pt;
 align-items: center;
@@ -66,7 +68,7 @@ margin-bottom: 2cm;
 }
 h1 {
 margin-top: -1cm;
-color: #d7ecf7;
+color: #5e859a;
 font-family: 'gasoek one';
 justify-content: flex-start;
 flex: 50%;
@@ -112,9 +114,7 @@ align-items: flex-end;
 }
 
 @media only screen and (max-width: 800px) {
-  body{
-    background-color: antiquewhite;
-  }
+
   h1{
     margin-top: 1cm;
     margin-bottom: 1cm;

@@ -5,7 +5,7 @@
   
   }
 body {
-  background-color: rgb(23, 19, 17);
+  background-image: url(imgs/note-book.webp);
     font-family: 'smooch sans';
     padding: 50px;
 }
@@ -68,14 +68,14 @@ span.test2 {
   
 
 .animate-charcter
-{
-    font-family: 'gasoek one';
+{ margin-top: -3cm;
+  font-family: 'gasoek one';
    text-align: left;
    background-image: linear-gradient(
     100deg,
-    rgb(252, 244, 247) 0%,
-    #d7ecf7 63%,
-    rgb(252, 244, 247)23%,
+    rgb(31, 27, 25) 0%,
+    #391f07 63%,
+    rgb(153, 91, 76)23%,
     rgb(250, 243, 249) 100%
    
   );

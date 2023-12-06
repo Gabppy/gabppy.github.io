@@ -1,7 +1,7 @@
 
 
 body{
-  background-color: #13100b;
+  background-image: url(imgs/note-book.webp);
 }
 
 /* .wrapper {
@@ -17,7 +17,7 @@ body{
 p{
   margin-top: 3cm;
   font-family: young serif;
-  color:#f5b6e3;
+  color:#8f537f;
   font-size: 20pt;
 }
 .top {
@@ -46,6 +46,7 @@ p{
 }
 
 img { 
+  border-radius: 5%;
     display: inline-block; 
     width:auto;   
     margin-top: 50pt;
@@ -87,7 +88,7 @@ pre{
   background-image: linear-gradient(
     -225deg,
     hotpink 0%,
-    #bfa3bf 67%,
+    #8d658d 67%,
     #3e2105 100%
   );
   background-size: auto;
@@ -139,10 +140,10 @@ margin-top: 3cm;
 }
 
 .nav{
-  background-color: rgb(207, 150, 193);
+  background-color: rgb(226, 162, 210);
   font-size: larger;
   font-family: 'young serif';
-  color: rgb(252, 244, 247);
+  color: rgb(168, 97, 123);
 }
 
 
@@ -219,12 +220,11 @@ span.test2 {
   .main {
     display: flex;
     order: 3;
-     color:#f5b6e3;
     text-align: left;
     font-size: 15pt;
     font-weight: bold;
     padding: 1em;
-    color:#f5b6e3;
+    color:#b2659c;
   }
 .nav {
   margin-top: 9cm;
@@ -278,7 +278,7 @@ span.test2 {
     align-items: center;
     font-style: italic;
     font-size: 2em;
-    color: white;
+    color: rgb(114, 114, 114);
   }
 
 
@@ -295,7 +295,7 @@ span.test2 {
     font-family: 'young serif';
     font-style: bold;
     font-size: 1.5em;
-    color: rgb(252, 244, 247);
+    color: rgb(125, 125, 125);
   }
   .imageBox {
     overflow: auto;

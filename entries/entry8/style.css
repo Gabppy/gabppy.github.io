@@ -1,10 +1,10 @@
 body{
-  background-image: url(imgs/background.jpeg);
+  background-image: url(imgs/note-book.webp);
   background-size: cover;
   background-attachment: fixed;
 }
 button {
-  font-family: young serif;
+  font-family: 'young serif';
   border-radius: 0%;
   color: #bd64d5;
   border-color:#e4c0ee;
@@ -31,7 +31,7 @@ img{
   padding-top: 8cm;
 }
 pre{
-  color: #bbedf8;
+  color: #659eaa;
 }
 
 /* .imageBox {
@@ -82,7 +82,7 @@ pre{
 
 @keyframes textclip {
   to {
-    color:#ecc2f7;
+    color:#bb91c5;
     background-position: 200% center;
   }
 }
@@ -92,11 +92,11 @@ pre{
 
 
 .main {
-  border: 3px solid #90bbc5;
+  border: 3px solid #75aab6;
   border-radius: 100px;
   border-style: dotted;
   font-family: 'Pixelify Sans', sans-serif;
-  color:#eccaf5;
+  color:#bf8ecc;
   font-size: small;
 
   
@@ -109,7 +109,7 @@ pre{
   font-size: 100px;
   font-family: 'Pixelify Sans', sans-serif;
    font-style: bold;
-   color:#ecc6f6;
+   color:#c891d5;
   padding-bottom: 40px;
   
 }
@@ -118,7 +118,7 @@ pre{
   margin-top: -1cm;
   font-size: larger;
   font-family: 'young serif';
-  color:#e2bcec;
+  color:#c98bda;
 }
 
 
@@ -129,7 +129,7 @@ pre{
   height: 10px;
   position: relative;
   animation: myfirst 8s linear 4s infinite alternate;
-  color:#e6c3f0;
+  color:#c095cc;
   font-family: 'Pixelify Sans', sans-serif;}
 
 span.test2 {
@@ -157,7 +157,7 @@ h3{
 .nav{
   margin-top: 0cm;
   text-align: center;
-  color: #f8d8e5;
+  color: #d996b1;
   margin-bottom: -4cm;
 }
 .animate-charcter{
@@ -178,12 +178,12 @@ p{
 }
 pre{
   margin-top: 7cm;
-  color: #fde4ee;
+  color: #916a7a;
 
 }
 button{
   color: #db88f1;
-  font-family: young serif;
+  font-family: 'young serif';
   border-color: #cae9f0;
   font-size: 12pt;
   margin-bottom: 2cm;
