@@ -1,26 +1,29 @@
 body{
     opacity: 80%;
-    background-image: url(imgs/background.jpeg);
+    background-image: url(imgs/note-book.webp);
     background-size: cover;
     background-attachment: fixed;
 }
-
+img{
+  padding: 30px;
+  min-width: 50px;
+}
 a: link{
   text-decoration: none;
 }
   h1{
     font-variant: small-caps;
     opacity: 95%;
-    background-color: #f2f2f2;
+   
     text-align: center;
     color: rgb(23, 23, 23);
     font-size: 100px;
-    font-family: 'gasoek one';
+    font-family: 'shizuru';
     font-style: regular;
     margin-bottom: -100px;
 }
 h2{
-    background-color: rgb(255, 255, 255);
+  
    border-radius: 1px;
    padding: 5px;
     font-family: 'young serif';
@@ -30,7 +33,7 @@ h2{
 
 p{
   padding: 10px;
-    background-color: rgb(240, 240, 240);
+
    font-size: 17pt;
     text-align: center;
     color: rgb(24, 24, 24);
@@ -84,11 +87,11 @@ p{
     }
     h1{
       opacity: 95%;
-      background-color: rgb(242, 242, 240);
+   
       color: black;
     }
 
-    p{      background-color: rgb(242, 242, 242);
+    p{ 
       color: black;
       padding: 5px;
       font-family: young serif;

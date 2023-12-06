@@ -70,11 +70,14 @@ float: none;
     }
     h1{
       color: rgb(245, 232, 220);
-      margin-bottom: 5cm;
+      margin-bottom: 15cm;
+      margin-top: -4cm;
+
     }
   }
   @media only screen and (max-width: 1400px, min-width:601px) {
     h1{
+      margin-bottom: 5cm;
       font-size: 50pt;
       color: aquamarine;
     }
