@@ -1,16 +1,16 @@
 body {
-  background-color: #21239a;
+ 
     background-image: url(imgs/blue-1.JPG);
     background-size: cover;
    
 }
 h1 {
   opacity: 80%;
-  font-size: 100pt;
+  font-size: 130pt;
     margin-right: -700pt;
     color: rgb(252, 244, 247);
     font-family: gasoek one;
-    font-variant: small-caps;
+  
 }
 h1:hover {
   opacity: 100%;
@@ -40,6 +40,26 @@ p {
     font-family: smooch sans;
     font-size: 20pt;
     margin-right: 34pt;
+}
+.div {
+  margin-top: 7cm;
+  width: 200px;
+  height: 10px;
+  position: relative;
+  animation: myfirst 8s linear 4s infinite alternate;
+  color:#c095cc;
+  font-family: 'Pixelify Sans', sans-serif;}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+}
+
+@keyframes myfirst {
+  0%   {left:0px; top:0px;}
+  25%  {left:600px; top:0px;}
+  50%  {left:600px; top:600px;}
+  75%  {left:0px; top:600px;}
+  100% {left:0px; top:0px;}
 }
 
 .animate-charcter
